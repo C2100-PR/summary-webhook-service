@@ -1,17 +1,17 @@
 steps:
-- name: 'gcr.io/cloud-builders/gcloud'
-  args:
-  - functions 
-  - deploy
-  - summary-webhook
-  - --region=us-west1
-  - --runtime=nodejs18
-  - --trigger-http
-  - --allow-unauthenticated
-  - --memory=256MB
-  - --timeout=60s
-  - --max-instances=10
-  - --min-instances=0
-  - --concurrency=80
-  - --entry-point=summary-webhook
-  - --source=./src
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - functions
+      - deploy
+      - summary-webhook
+      - --region=us-west1
+      - --runtime=nodejs18
+      - --trigger-http
+      - --allow-unauthenticated
+      - --memory=256MB
+      - --timeout=60s
+      - --max-instances=10
+      - --min-instances=0
+      - --concurrency=80
+      - --entry-point=summary-webhook
+      - --source=./src
