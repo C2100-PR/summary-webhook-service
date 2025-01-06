@@ -1,0 +1,15 @@
+{
+  "name": "summary-webhook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "functions-framework --target=summary-webhook"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.1.0",
+    "@google-cloud/logging": "^10.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
